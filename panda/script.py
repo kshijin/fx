@@ -1,7 +1,10 @@
 import pandas as pd
 
 
-def main():
+def main() -> None:
+    """
+    read json File1 and File2 and merge to one file if all columns are same
+    """
     file1 = pd.read_json('file1.json')
     file2 = pd.read_json('file2.json')
 

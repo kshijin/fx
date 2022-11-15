@@ -3,6 +3,7 @@ import datetime
 
 db = peewee.SqliteDatabase('test.db')
 
+# orm class for transaction model
 class Forex(peewee.Model):
 
     from_cur = peewee.CharField()
@@ -18,4 +19,5 @@ class Forex(peewee.Model):
         database = db
         db_table = 'transaction'
 
+# creading the table 
 Forex.create_table()
